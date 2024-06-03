@@ -47,7 +47,11 @@ kaggle competitions download -c jigsaw-unintended-bias-in-toxicity-classificatio
 
 ```bash
 
-python preprocessing_utils.py --train_csv jigsaw_data/jigsaw-unintended-bias-in-toxicity-classification/train.csv --test_csv jigsaw_data/jigsaw-unintended-bias-in-toxicity-classification/test.csv --biased_data
+# generate a biased sample for re-training
+python preprocessing_utils.py --train_csv jigsaw_data/jigsaw-unintended-bias-in-toxicity-classification/train.csv --test_csv jigsaw_data/jigsaw-unintended-bias-in-
+toxicity-classification/test.csv --biased_data
+
+# re-train biased model
 python train.py --config configs/Unintended_bias_toxic_comment_classification_RoBERTa_combined.json
 
 ```
