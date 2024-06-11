@@ -15,6 +15,7 @@ pip install -r requirements.txt --no-deps
 git clone git@github.com:mosco/crossing-probability.git
 ```
 (For Mac) If you don't have swig and libfftw3 installed, install it with `brew update && brew install swig libfftw3-dev`.
+
 (For Ubuntu) If you don't have swig and libfftw3 installed, install it with `sudo apt update && sudo apt install -y swig libfftw3-dev`.
 
 Note: 
