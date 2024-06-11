@@ -1,6 +1,46 @@
 # risk-control-for-llms
 Calibrating Generative Models to achieve safety guarantee with limited annotated data
 
+## Prompt Risk Control
+Create environment and install dependencies:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt --no-deps
+```
+
+### Install Crossing Probability
+```bash
+git clone git@github.com:mosco/crossing-probability.git
+```
+(For Mac) If you don't have swig and libfftw3 installed, install it with `brew update && brew install swig libfftw3-dev`.
+(For Ubuntu) If you don't have swig and libfftw3 installed, install it with `sudo apt update && sudo apt install -y swig libfftw3-dev`.
+
+Note: 
+```c++
+#include <limits>
+```
+to `src/common.cc` and
+```c++
+#include <iostream>
+#include <iterator>
+```
+to `src/common.hh` to get it to compile.
+
+Make the C++ library and install the Python package:
+```bash
+# make the C++ Library
+
+cd crossing-probability
+make
+
+# install the Python package
+
+make python
+pip install . 
+```
+
 ## Install Detoxify
 
 Install dependencies
