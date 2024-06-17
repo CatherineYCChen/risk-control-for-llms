@@ -3,24 +3,6 @@ Calibrating Generative Models to achieve safety guarantee with limited annotated
 
 ## Install Detoxify
 
-### Download Kaggle Datasets
-
- - Create New API Token in your Kaggle account - this will download a kaggle.json file
-
- - make sure the file is located in ~/.kaggle
-
- ```bash
-
-# create data directory
-
-mkdir jigsaw_data
-cd jigsaw_data
-
-# download data
-
-kaggle competitions download -c jigsaw-unintended-bias-in-toxicity-classification
-
-```
 
 ### Install dependencies
 ```bash
@@ -39,7 +21,24 @@ pip install -e 'detoxify[dev]'
 cd detoxify
 
  ```
+### Download Kaggle Datasets
 
+ - Create New API Token in your Kaggle account - this will download a kaggle.json file
+
+ - make sure the file is located in ~/.kaggle
+
+ ```bash
+
+# create data directory
+
+mkdir jigsaw_data
+cd jigsaw_data
+
+# download data
+
+kaggle competitions download -c jigsaw-unintended-bias-in-toxicity-classification
+
+```
 ### Training
 #### Unintended Bias in Toxicicity Challenge
 
