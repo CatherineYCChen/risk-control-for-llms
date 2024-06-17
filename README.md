@@ -45,7 +45,7 @@ kaggle competitions download -c jigsaw-unintended-bias-in-toxicity-classificatio
 ```bash
 
 # generate a biased sample for re-training
-python preprocessing_utils.py --train_csv jigsaw_data/jigsaw-unintended-bias-in-toxicity-classification/train.csv --test_csv jigsaw_data/jigsaw-unintended-bias-in-toxicity-classification/test_public_expanded.csv --biased_data
+python preprocessing_utils.py --train_csv jigsaw_data/train.csv --test_csv jigsaw_data/test_public_expanded.csv --biased_data
 # Note: modified preprocessing_utils.py
 
 # re-train biased model
