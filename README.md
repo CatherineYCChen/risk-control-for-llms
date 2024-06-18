@@ -90,7 +90,7 @@ pip install -r requirements.txt --no-deps
 
 ### Install Crossing Probability
 ```bash
-git clone git@github.com:mosco/crossing-probability.git
+git clone https://github.com/mosco/crossing-probability.git
 ```
 (For Mac) If you don't have swig and libfftw3 installed, install it with `brew update && brew install swig fftw`.
 
