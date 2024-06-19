@@ -7,11 +7,9 @@ Calibrating Generative Models to achieve safety guarantee with limited annotated
 ### Install dependencies
 ```bash
 # clone project
-
 git clone https://github.com/unitaryai/detoxify
 
 # create virtual env
-
 python3 -m venv toxic-env
 source toxic-env/bin/activate
 
@@ -30,12 +28,10 @@ cd detoxify
  ```bash
 
 # create data directory
-
 mkdir jigsaw_data
 cd jigsaw_data
 
 # download data
-
 kaggle competitions download -c jigsaw-unintended-bias-in-toxicity-classification
 
 ```
@@ -78,6 +74,16 @@ python model_eval/compute_bias_metric.py
 
 ## Install Llama
 Follow steps in [meta-llama repository](https://github.com/meta-llama/llama) 
+
+```bash
+
+git clone https://github.com/meta-llama/llama
+
+python3 -m venv .venv
+source .venv/bin/activate
+
+pip install -e llama --no-deps --no-cache-dir
+```
 
 ## Prompt Risk Control
 Create environment and install dependencies:
