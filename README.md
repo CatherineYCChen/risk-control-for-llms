@@ -47,8 +47,8 @@ python preprocessing_utils.py --train_csv jigsaw_data/train.csv --test_csv jigsa
 # re-train biased model
 python train.py --config configs/Unintended_bias_toxic_comment_classification_RoBERTa_combined.json --device=0 --num_workers=20
 # Note: modified the following files:
-config file: Unintended_bias_toxic_comment_classification_RoBERTa_combined.json
-trainer.py: Trainer(gpus=1, ...)
+# config file: Unintended_bias_toxic_comment_classification_RoBERTa_combined.json
+# trainer.py: Trainer(gpus=1, ...)
 ```
 
 #### Monitor progress with tensorboard
